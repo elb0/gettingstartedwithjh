@@ -2,7 +2,7 @@
 title: "Using RStudio with the JupyterHub"
 subtitle: "Get started in a gif-y"
 institute: "University of Toronto"
-date: "2021/01/05 (last updated: `r Sys.Date()`)"
+date: "Winter 2021 <br> .small[(last updated: `r Sys.Date()`)]"
 output:
   xaringan::moon_reader:
     css: jupyter.css
@@ -40,9 +40,9 @@ The content covered in these slides is also in a [video format on MS Stream](htt
 .left-column[
 .midi[
 1. Go to [jupyter.utoronto.ca](https://jupyter.utoronto.ca).
-1. If you *are NOT logged in to your UofT account* in that browser, click 'Log in to Continue' and log in through the single sign on as usual.
-1. If you *ARE logged in to your UofT account* in that browser, **select RStudio** before clicking 'Log in to start. This will open RStudio right away and you can skip the next step.
-1. Click 'New' and select RStudio from the dropdown menu.
+1. If you *are NOT logged in to your U of T account* in that browser, click 'Log in to Continue' and log in through the single sign on as usual.
+1. If you *ARE logged in to your U of T account* in that browser, **select RStudio** before clicking 'Log in to start. This will open RStudio right away and you can skip the next step.
+1. Click 'New' and select RStudio from the drop-down menu.
 ]
 ]
 
@@ -91,6 +91,9 @@ knitr::include_graphics("img/project.gif")
 ---
 ### Opening new files
 
+.small[
+.footnote[To open a new R script (.R) the keyboard shortcut is	Ctrl+Shift+N /	Cmd+Shift+N (except on Chrome/Windows) or 	Ctrl+Alt+Shift+N /	Cmd+Shift+Alt+N (Chrome only). [More shortcuts here](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts).]]
+
 .left-column[
 - You can create a new R Notebook or other R Markdown files or an R script from the Files menu.
 - RMarkdown is a great way to have your code, visualizations and commentary all in one place. Learn more in the [*Definitive Guide*](https://bookdown.org/yihui/rmarkdown/) and download the handy [**cheatsheet**](https://rstudio.com/resources/cheatsheets/)
@@ -103,6 +106,7 @@ knitr::include_graphics("img/openfile.gif")
 ```
 
 ]
+
 ---
 
 ```{r, echo=FALSE, out.width="90%", fig.align="center", fig.cap="Artwork by @allison_horst"}
@@ -110,7 +114,7 @@ knitr::include_graphics("img/rmarkdown_wizards.png")
 ```
 
 ---
-### Uploading files
+### Uploading files from your local computer to JupyterHub
 
 .left-column[
 - Upload data and other required files in the **Files** pane.
@@ -129,10 +133,10 @@ knitr::include_graphics("img/upload.gif")
 ### Using a sharing link
 
 .left-column[
-- If you have been given a sharing link, an are logged in to your UofT account, clicking it should open RStudio for you.
+- If you have been given a sharing link, an are logged in to your U of T account, clicking it should open RStudio for you.
   - [Here is an example](https://jupyter.utoronto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Felb0%2Fjupyterexample&urlpath=rstudio%2F&branch=main).
 - You'll notice that the same files that were previously open will be opened again, not necessarily the file you want. 
-- Naviagte to 'Home' and you'll see the new folder there.
+- Navigate to 'Home' and you'll see the new folder there.
 ]
 
 .right-column[
@@ -161,16 +165,29 @@ knitr::include_graphics("img/moving.gif")
 ]
 
 ---
-### Knitting and exporting files
+### Knitting Rmd files in RStudio
 
 .left-column[
-.midsmall[
 - When working with an R Markdown file (.Rmd) would will usually need to **Knit** to another format, such as PDF or HTML.
 - Click the 'Knit' button, or if that isn't showing, there should be a down arrow next to 'Preview' that lets you choose the knitted file type.
+]
+
+.right-column[
+
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("img/knitting.gif")
+```
+
+]
+
+---
+### Exporting files from JupyterHub to your local computer
+
+.left-column[
 - Tick the files you wish to export (i.e. download to your personal machine).
 - Go to the 'More' menu in the Files pane and select 'Export'.
-- If exporting multiple files, they will export as a .zip file. I suggest giving it a meaningful name and then clicking 'Download'.
-]]
+- If you are exporting multiple files, they will export in a .zip file. I suggest giving it a meaningful name and then clicking 'Download'.
+]
 
 .right-column[
 
@@ -197,6 +214,13 @@ knitr::include_graphics("img/troubleshooting.gif")
 ```
 
 ]
+
+---
+## A note about installing packages
+
+There are several packages already installed for you on the JupyterHub.  E.g. you can run `library(tidyverse)` without installing tidyverse first.
+
+If you have to install a package (i.e. use `install.packages("packagename")`) it will only remain installed for the duration of your session. That is, when you come back the next day, you will have to install it again. If you have experience with RStudio locally, this will be a bit different. If you get an error saying '`there is no package called`...' you probably need to re-add / un-comment the `install.packages()` part of your code.
 
 ---
 class: center, middle
