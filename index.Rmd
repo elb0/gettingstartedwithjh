@@ -32,7 +32,7 @@ knitr::include_graphics("img/logo.png")
 
 The JupyterHub is a way to access Python Notebooks and RStudio without needing to install anything on your personal devices.
 
-The content covered in these slides is also in a video format on MS Stream if you would prefer to watch it there. (There is no spoken audio.)
+The content covered in these slides is also in a [video format on MS Stream](https://web.microsoftstream.com/video/cdac6c6d-0a61-4cf1-843b-9c0b0c8b22ca) if you would prefer to watch it there. (There is no spoken audio.)
 
 ### [Link: jupyter.utoronto.ca](https://jupyter.utoronto.ca)
 
