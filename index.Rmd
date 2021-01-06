@@ -1,5 +1,5 @@
 ---
-title: "Using RStudio with the Jupyter Hub"
+title: "Using RStudio with the JupyterHub"
 subtitle: "Get started in a gif-y"
 institute: "University of Toronto"
 date: "2021/01/05 (last updated: `r Sys.Date()`)"
@@ -18,10 +18,8 @@ xaringanExtra::use_share_again()
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-#style_duo(primary_color = "#000000", secondary_color = "#")
-
-style_mono_accent(base_color = "#F69D63", header_font_google = google_font("Overlock"))
+#library(xaringanthemer)
+#style_mono_accent(base_color = "#F69D63", header_font_google = google_font("Overlock"))
 ```
 
 class: center, middle
