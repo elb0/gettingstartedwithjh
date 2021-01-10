@@ -12,9 +12,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 --- 
+class: center, middle
 
 ```{r xaringanExtra-share-again, echo=FALSE}
 xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(share_buttons = c("none"))
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
@@ -22,17 +24,16 @@ xaringanExtra::use_share_again()
 #style_mono_accent(base_color = "#F69D63", header_font_google = google_font("Overlock"))
 ```
 
-class: center, middle
-
 ```{r, echo=FALSE, out.width="70%"}
 knitr::include_graphics("img/logo.png")
 ```
 
 The JupyterHub is a way to access Python Notebooks and RStudio without needing to install anything on your personal devices.
 
-The content covered in these slides is also in a [video format on MS Stream](https://web.microsoftstream.com/video/cdac6c6d-0a61-4cf1-843b-9c0b0c8b22ca) if you would prefer to watch it there. (There is no spoken audio.)
+All the gifs in these slides are also in a [video format on MS Stream](https://web.microsoftstream.com/video/cdac6c6d-0a61-4cf1-843b-9c0b0c8b22ca) if you would prefer to watch it there. (There is no spoken audio.)
 
 ### [Link: jupyter.utoronto.ca](https://jupyter.utoronto.ca)
+
 
 ---
 ### Logging in
@@ -164,6 +165,14 @@ knitr::include_graphics("img/moving.gif")
 
 ]
 
+---
+#### A note on sharing links: getting back original files/updates from your instructor
+
+If you want to get back original copies of any files, or your instructor updates the files for an assessment or activity, you can get/update these files by re-clicking the original provided sharing link. This will not overwrite your own work.
+
+*If you've renamed your working folder or moved it into a subfolder*: Click the sharing link again. A new copy of the whole folder will appear in your Home folder. Move the files you want to the subfolder you are working in (see the previous slide). 
+
+*If you haven't moved your working folder out of the Home folder nor renamed it*: Rename any files you have already worked on, for which you want to get the original. Click the sharing link again. Any new or missing files will now appear in your folder.
 ---
 ### Knitting Rmd files in RStudio
 
