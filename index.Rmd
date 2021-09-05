@@ -2,7 +2,7 @@
 title: "Using RStudio with the JupyterHub"
 subtitle: "Get started in a gif-y"
 institute: "University of Toronto"
-date: "Winter 2021 <br> .small[(last updated: `r Sys.Date()`)]"
+date: "2021-22 <br> .small[(last updated: `r Sys.Date()`)]"
 output:
   xaringan::moon_reader:
     css: jupyter.css
